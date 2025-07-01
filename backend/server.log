@@ -1,0 +1,24 @@
+warning: GOPATH set to GOROOT (/home/swlee/go) has no effect
+2025/07/01 15:50:17 Database initialized successfully
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /health                   --> main.healthCheck (4 handlers)
+[GIN-debug] GET    /api/todos                --> main.getTodos (4 handlers)
+[GIN-debug] POST   /api/todos                --> main.createTodo (4 handlers)
+[GIN-debug] PATCH  /api/todos/:id            --> main.toggleTodo (4 handlers)
+[GIN-debug] DELETE /api/todos/:id            --> main.deleteTodo (4 handlers)
+2025/07/01 15:50:17 Server starting on port 8080...
+2025/07/01 15:50:17 API endpoints:
+2025/07/01 15:50:17   GET    /health
+2025/07/01 15:50:17   GET    /api/todos
+2025/07/01 15:50:17   POST   /api/todos
+2025/07/01 15:50:17   PATCH  /api/todos/:id
+2025/07/01 15:50:17   DELETE /api/todos/:id
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [ERROR] listen tcp :8080: bind: address already in use
